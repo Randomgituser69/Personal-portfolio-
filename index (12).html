@@ -1,0 +1,98 @@
+<!--
+  Hit RUN to see this project in action!
+  
+  This project will auto-refresh as you edit the HTML, CSS and JS. See README.md for more info (including how to disable auto-refresh and install packages).
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Workbench&display=swap'); 
+    
+    * { 
+  font-style: 'normal';
+  font-family: "Workbench", sans-serif;
+  }
+    button {
+      display: inline-flex; 
+      width: 400px; 
+      text-align: center; 
+      align-items: center;
+      border-radius: 10px; 
+      padding: 10px;
+    } 
+    label {
+      color: brown;
+    }
+    nav { 
+      padding: 10px; 
+      border: 10px; 
+      border-radius: 10px;
+      background-color: navy;
+    }
+    .nav ul {
+      float: right; 
+      margin-right: 20px;
+    } 
+    nav ul li { 
+      display: inline-block;
+      line-height: 80px; 
+      margin: 0 5px;
+    } 
+    nav ul li a {
+      color: yellow;
+    }
+    main {
+      background: black; 
+    } 
+    main h1 {
+      color: white; 
+    } 
+    main p {
+      color: white;
+    }
+    body {
+      background: black;
+    }
+  </style>
+</head>
+  <body>
+     <nav> 
+       <label>My Portfolio</label>
+  
+     <ul>
+       <li><a>Home</a></li> 
+       <li><a>Projects</a></li>
+       <li><a>Contact</a></li>
+       <li><a>About me</a></li> 
+     </ul>
+   </nav>
+    <main>
+      <h1>Welcome to my personal portfolio</h1>
+      <p>This is a portfolio website where you can find my projects and other stuff.</p>
+    </main>
+   <button>See my profile </button> 
+    <img src="fazlulhuqhall.jpg">
+  <script>
+    let pikchar = document.querySelector('img'); 
+let botam = document.querySelector('button');
+    botam.addEventListener('click', event => {
+      if (pikchar.style.display === 'none') {
+      pikchar.style.display = 'flex'; 
+        pikchar.style.width = '400px'; 
+        pikchar.style.border = '2px solid black' 
+        pikchar.style.borderRadius = '10px'; 
+        pikchar.style.padding = '10px';
+        botam.textContent = 'Hide my profile';
+      } else {
+    pikchar.style.display = 'none'; 
+      botam.textContent = 'See my profile';
+      }
+    });
+  </script>
+
+</body>
+
+</html>
